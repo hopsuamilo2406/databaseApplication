@@ -1,0 +1,846 @@
+{
+	"info": {
+		"_postman_id": "967db68f-7ab7-43f9-81c9-28de55ed96a5",
+		"name": "Eleven",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23657051"
+	},
+	"item": [
+		{
+			"name": "Warehouse Admin",
+			"item": [
+				{
+					"name": "GET CATEGORY BY ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBjNmI5MzE1LWU1ZGEtNGM4Ni05ZTQ0LTA1MWIzZTJjOTVkZSIsImlhdCI6MTY5NDUyODk2MywiZXhwIjoxNjk0NjE1MzYzfQ.O42Ky88gP8RrPWXkmsKTIOyok5ex4hNS9NZAlX2yUPQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/categories/64eed08102e4bbf4f719708e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"64eed08102e4bbf4f719708e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE categories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjkzNjI2MTQxLCJleHAiOjE2OTM3MTI1NDF9.YTEiZbqMzwyqLWsWoQsgU8s24uAgg8s7PjRrIdbrdL0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjkzNTY1Mjg5LCJleHAiOjE2OTM2NTE2ODl9.YSddqm9R_ltzsl9ZA5eqJkIEjW6keJ_zLZ8CstNN4aM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/categories/64e87c3b2f05feeb58826e14",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"64e87c3b2f05feeb58826e14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNkNDJjOGFiLTZjOGItNGU4OS04MDViLTJlOTQ3YzljZDNmMiIsImlhdCI6MTY5NDg3ODE2MiwiZXhwIjoxNjk0OTY0NTYyfQ.j1owc7kB3vGVSs23Yy-pn_ZyoPNJ74mZst-I0m_RxuA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"sir\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/64eeff07b7a498d0373fd8da",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"64eeff07b7a498d0373fd8da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create warehouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"warehouse 1\",\n    \"address\": \"hehe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/warehouses",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"warehouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE WAREHOUSE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjkzNTY1Mjg5LCJleHAiOjE2OTM2NTE2ODl9.YSddqm9R_ltzsl9ZA5eqJkIEjW6keJ_zLZ8CstNN4aM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/warehouses/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"warehouses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update warehouse",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"warehouse 1\",\n    \"address\": \"hehe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/warehouses/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"warehouses",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Display all warehouses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjkzNTY1Mjg5LCJleHAiOjE2OTM2NTE2ODl9.YSddqm9R_ltzsl9ZA5eqJkIEjW6keJ_zLZ8CstNN4aM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/warehouses",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"warehouses"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Move Product to another warehouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": 7,\n    \"warehouseId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products/move",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"move"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sellers",
+			"item": [
+				{
+					"name": "CREATE product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjk0MDE1Nzc0LCJleHAiOjE2OTQxMDIxNzR9.LE16taxqbl_OmERXa5QhzZQOi-sq9WUNclfF7JLckzA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"dsds\",\n    \"price\": 6.9,\n    \"quantityNumber\": 5,\n    \"warehouseId\": 1,\n    \"categoryId\": \"64f2a481599919d68665ed0f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"1\",\n    \"description\": \"desc\",\n    \"price\": 1.2,\n    \"quantityNumber\": 10,\n    \"dimension\": 1.2,\n    \"image\": \"link\",\n    \"categoryId\": 1,\n    \"warehouseId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products/7d4193e7-2baa-4671-91b5-4337c02103ac",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"7d4193e7-2baa-4671-91b5-4337c02103ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products/7d4193e7-2baa-4671-91b5-4337c02103ac?X-Access-Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ5NzJjNmQ3LTJmNGMtNDcxYy1iZTA1LWQ4ODFiOGIxMDFlYSIsImlhdCI6MTY5NDUxNjQ1MywiZXhwIjoxNjk0NjAyODUzfQ.N6IsASh-LT1_BhGo-cDUNdL2N2c0-2bELQypEd2Y1J8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"7d4193e7-2baa-4671-91b5-4337c02103ac"
+							],
+							"query": [
+								{
+									"key": "X-Access-Token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ5NzJjNmQ3LTJmNGMtNDcxYy1iZTA1LWQ4ODFiOGIxMDFlYSIsImlhdCI6MTY5NDUxNjQ1MywiZXhwIjoxNjk0NjAyODUzfQ.N6IsASh-LT1_BhGo-cDUNdL2N2c0-2bELQypEd2Y1J8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product by id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Access-Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBjNmI5MzE1LWU1ZGEtNGM4Ni05ZTQ0LTA1MWIzZTJjOTVkZSIsImlhdCI6MTY5NDUyODcyNiwiZXhwIjoxNjk0NjE1MTI2fQ.yMCKW-ZF4T46jjDRTb-GzvhLkVoRvpgJKtLfIHvBXXY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/products/08cdbac3-5edb-40e5-9a1b-bfcf7ebcf860",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"08cdbac3-5edb-40e5-9a1b-bfcf7ebcf860"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Add to cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlmMzU3MzQ5LTY0OTgtNGVhYy05MzhlLTg3NDIzZGExZjViZiIsImlhdCI6MTY5NDg0NjUzNSwiZXhwIjoxNjk0OTMyOTM1fQ.YVLMVA_124lPNgcpa9gRmFw6RFj9GuAJpiYivKFDU_M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"0c6b9315-e5da-4c86-9e44-051b3e2c95de\",\n    \"productId\": \"08cdbac3-5edb-40e5-9a1b-bfcf7ebcf860\",\n    \"productTitle\": \"Sleek Plastic Towels\",\n    \"productQuantity\": 5,\n    \"price\": 2.3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/carts/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cart",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlmMzU3MzQ5LTY0OTgtNGVhYy05MzhlLTg3NDIzZGExZjViZiIsImlhdCI6MTY5NDgzNTk2NiwiZXhwIjoxNjk0OTIyMzY2fQ.IZ9roJJbjJMDzBGpIYrqU2fYiUhQemw2LtN-WHeUgBs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/carts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "9f357349-6498-4eac-938e-87423da1f5bf",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cart item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"8d8e7c2b-83a5-4270-86ad-8f873ecd6485\",\n    \"cartItemId\": \"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/carts/cart_items",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"cart_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"f0d2071e-35ec-460a-b04b-2546910ff313\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get orders by user id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/orders/f0d2071e-35ec-460a-b04b-2546910ff313",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders",
+								"f0d2071e-35ec-460a-b04b-2546910ff313"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update order status using User ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNkNDJjOGFiLTZjOGItNGU4OS04MDViLTJlOTQ3YzljZDNmMiIsImlhdCI6MTY5NDkyODI1MywiZXhwIjoxNjk1MDE0NjUzfQ.AbxO32II2Q2MKCjGkSTIFMFFgia33kjF18535rbK92c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"accept\",\n    \"orderId\": \"dajasjdjajds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/orders/status/f0d2071e-35ec-460a-b04b-2546910ff313",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders",
+								"status",
+								"f0d2071e-35ec-460a-b04b-2546910ff313"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SEED",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/seed",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find products by category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ5NzJjNmQ3LTJmNGMtNDcxYy1iZTA1LWQ4ODFiOGIxMDFlYSIsImlhdCI6MTY5NDUxNjQ1MywiZXhwIjoxNjk0NjAyODUzfQ.N6IsASh-LT1_BhGo-cDUNdL2N2c0-2bELQypEd2Y1J8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/category/64fc275a1777b0cc9fb73536",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"category",
+						"64fc275a1777b0cc9fb73536"
+					],
+					"query": [
+						{
+							"key": "minPrice",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "maxPrice",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "price",
+							"disabled": true
+						},
+						{
+							"key": "sortOrder",
+							"value": "DESC",
+							"disabled": true
+						},
+						{
+							"key": "keywords",
+							"value": "galaxy",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/products?keywords=chair",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "minPrice",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "maxPrice",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "price",
+							"disabled": true
+						},
+						{
+							"key": "sortOrder",
+							"value": "DESC",
+							"disabled": true
+						},
+						{
+							"key": "keywords",
+							"value": "chair"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQyZTJmZmQ3LTdjMmUtNDZlNC1iZGNhLTJkN2JkYzY0OTQzNyIsImlhdCI6MTY5NDUzNTA1MywiZXhwIjoxNjk0NjIxNDUzfQ.84XDaksipW9xHZ1fEWLQIjVS-LJjSemfNhrRKHDSr-M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIGN UP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"123456\",\n    \"email\": \"w3@g.com\",\n    \"role\": \"ADMIN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"william1\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEED ACCOUNT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/seed/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seed",
+						"account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
